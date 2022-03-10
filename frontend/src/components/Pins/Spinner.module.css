@@ -1,0 +1,10 @@
+.spinner {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 5rem;
+}
+
+.spinner p {
+  text-align: center;
+}

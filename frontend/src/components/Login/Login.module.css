@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  align-items: center;
+  max-height: 100vh;
+}
+
+.login {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.login video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  display: grid;
+  justify-items: center;
+}
+
+.btn {
+  background-color: #fff;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  white-space: nowrap;
+}

@@ -1,0 +1,62 @@
+.navBar {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 85% 15%;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.input {
+  background-color: #fff;
+  width: 100%;
+  display: inline-flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.input,
+.addBtn {
+  padding: 0.7rem;
+  border-radius: 10px;
+}
+
+.input input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.addBtn {
+  background-color: black;
+  color: #fff;
+}
+
+.links a img {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 426px) {
+  .navBar {
+    grid-template-columns: 92% 8%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .links a img {
+    display: block;
+  }
+
+  .navBar {
+    grid-template-columns: 90% 10%;
+  }
+}

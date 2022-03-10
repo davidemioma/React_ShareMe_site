@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Lato:wght@300;400;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

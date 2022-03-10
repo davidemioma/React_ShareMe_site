@@ -1,0 +1,83 @@
+.profile {
+  width: 100%;
+}
+
+.userProfile {
+  position: relative;
+}
+
+.backImg {
+  width: 100%;
+  height: 370px;
+  border-radius: 20px;
+}
+
+.userImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.logout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  z-index: 10;
+}
+
+.logout button {
+  border-radius: 100%;
+  background-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.userContent {
+  margin-top: 2rem;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 3rem;
+}
+
+.userContent h1 {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buttons button {
+  padding: 0.7rem 1.3rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.activeBtn {
+  background-color: red;
+  color: #fff;
+}
+
+.empty {
+  text-align: center;
+}

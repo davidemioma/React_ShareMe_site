@@ -1,0 +1,95 @@
+.container {
+  background-color: #f8f8f8;
+  width: 100%;
+}
+
+.sideBar,
+.modal {
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #fff;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.sideBar {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  z-index: 100;
+}
+
+.closeBtn {
+  margin-left: 85%;
+  margin-bottom: 1rem;
+}
+
+.navBar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBar img {
+  cursor: pointer;
+}
+
+.userImg {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+
+.content {
+  position: absolute;
+  top: 5rem;
+  padding: 0 1.5rem;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.contents {
+  display: grid;
+  min-height: 100vh;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 800px) {
+  .sideBar {
+    display: block;
+  }
+
+  .navBar {
+    display: none;
+  }
+
+  .modal {
+    display: none;
+  }
+
+  .content {
+    position: unset;
+    padding: 1rem 1.5rem;
+  }
+
+  .contents {
+    grid-template-columns: 25% 75%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contents {
+    grid-template-columns: 20% 80%;
+  }
+}
