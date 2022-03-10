@@ -30,6 +30,8 @@ const UserProfile = () => {
       ? JSON.parse(localStorage.getItem("user"))
       : localStorage.clear();
 
+  console.log(User.googleId);
+
   useEffect(() => {
     const query = userQuery(userId);
 
@@ -75,8 +77,8 @@ const UserProfile = () => {
 
         <img className={classes.userImg} src={user.image} alt="user-pic" />
 
-        <div className={classes.logout}>
-          {userId === User?.googleId && (
+        {userId === User.googleId && (
+          <div className={classes.logout}>
             <GoogleLogout
               clientId={process.env.REACT_APP_GOOGLE_API_TOKEN}
               render={(renderProps) => (
@@ -91,8 +93,8 @@ const UserProfile = () => {
               onLogoutSuccess={logoutHandler}
               cookiePolicy="single_host_origin"
             />
-          )}
-        </div>
+          </div>
+        )}
       </div>
 
       <div className={classes.userContent}>
